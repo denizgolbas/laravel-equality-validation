@@ -1,10 +1,8 @@
 # Laravel Equality Validation
 
-[![Tests](https://github.com/denizgolbas/laravel-equality-validation/actions/workflows/tests.yml/badge.svg)](https://github.com/denizgolbas/laravel-equality-validation/actions/workflows/tests.yml)
-[![Packagist](https://img.shields.io/packagist/v/denizgolbas/laravel-equality-validation.svg)](https://packagist.org/packages/denizgolbas/laravel-equality-validation)
-[![Packagist Downloads](https://img.shields.io/packagist/dt/denizgolbas/laravel-equality-validation.svg)](https://packagist.org/packages/denizgolbas/laravel-equality-validation)
-[![License](https://img.shields.io/packagist/l/denizgolbas/laravel-equality-validation.svg)](https://packagist.org/packages/denizgolbas/laravel-equality-validation)
-[![PHP Version](https://img.shields.io/packagist/php-v/denizgolbas/laravel-equality-validation.svg)](https://packagist.org/packages/denizgolbas/laravel-equality-validation)
+[![Tests](https://github.com/denizgolbas/laravel-equality-validation/actions/workflows/tests.yml/badge.svg?branch=master)](https://github.com/denizgolbas/laravel-equality-validation/actions/workflows/tests.yml)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![PHP Version](https://img.shields.io/badge/PHP-8.1%2B-blue.svg)](https://php.net)
 [![Laravel Version](https://img.shields.io/badge/Laravel-10.x%20%7C%2011.x-red.svg)](https://laravel.com)
 
 A powerful Laravel validation rule for checking equality between reference and target model columns. Perfect for validating relationships, matching codes, currencies, and ensuring data consistency across related models.
