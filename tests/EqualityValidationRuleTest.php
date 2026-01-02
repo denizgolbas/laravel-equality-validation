@@ -20,7 +20,7 @@ class EqualityValidationRuleTest extends TestCase
         // Create test tables
         Schema::create('reference_models', function ($table) {
             $table->id();
-            $table->string('code');
+            $table->string('code')->nullable();
             $table->string('currency')->nullable();
             $table->integer('status')->default(1);
             $table->timestamps();
@@ -28,7 +28,7 @@ class EqualityValidationRuleTest extends TestCase
 
         Schema::create('target_models', function ($table) {
             $table->id();
-            $table->string('code');
+            $table->string('code')->nullable();
             $table->string('currency')->nullable();
             $table->integer('status')->default(1);
             $table->timestamps();
@@ -131,7 +131,7 @@ class EqualityValidationRuleTest extends TestCase
     public function test_validation_passes_with_different_column_names()
     {
         $reference = ReferenceModel::create(['code' => 'REF001']);
-        $target = TargetModel::create(['currency' => 'REF001']);
+        $target = TargetModel::create(['code' => 'DEFAULT', 'currency' => 'REF001']);
 
         $validator = Validator::make([
             'reference_id' => $reference->id,
@@ -312,7 +312,7 @@ class EqualityValidationRuleTest extends TestCase
     public function test_validation_fails_with_different_column_names_mismatch()
     {
         $reference = ReferenceModel::create(['code' => 'REF001']);
-        $target = TargetModel::create(['currency' => 'REF002']);
+        $target = TargetModel::create(['code' => 'DEFAULT', 'currency' => 'REF002']);
 
         $validator = Validator::make([
             'reference_id' => $reference->id,
