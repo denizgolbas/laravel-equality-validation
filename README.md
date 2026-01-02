@@ -5,7 +5,7 @@
 [![Packagist Downloads](https://img.shields.io/packagist/dt/denizgolbas/laravel-equality-validation.svg)](https://packagist.org/packages/denizgolbas/laravel-equality-validation)
 [![License](https://img.shields.io/packagist/l/denizgolbas/laravel-equality-validation.svg)](https://packagist.org/packages/denizgolbas/laravel-equality-validation)
 [![PHP Version](https://img.shields.io/packagist/php-v/denizgolbas/laravel-equality-validation.svg)](https://packagist.org/packages/denizgolbas/laravel-equality-validation)
-[![Laravel Version](https://img.shields.io/badge/Laravel-9.x%20%7C%2010.x%20%7C%2011.x-red.svg)](https://laravel.com)
+[![Laravel Version](https://img.shields.io/badge/Laravel-10.x%20%7C%2011.x-red.svg)](https://laravel.com)
 
 A powerful Laravel validation rule for checking equality between reference and target model columns. Perfect for validating relationships, matching codes, currencies, and ensuring data consistency across related models.
 
